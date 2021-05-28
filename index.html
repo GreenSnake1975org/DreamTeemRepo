@@ -1,0 +1,46 @@
+<html>
+	<head>
+		hello...
+	</head>
+<body>
+<h1>
+hello,world!!!
+</h1>
+<ol>
+	<li>git init</li>
+	<li>git status</li>
+	<li>git add <b>#file</b> | <b>*</b></li>
+	<li>git add <b>*.*</b> : <i>add to stage all FILES in current FOLDER</i> 
+	<li>git add <b>.</b> : <i>add to stage all FILES in current FOLDER AND SUBFOLDERS</i> 
+	<li>git commit -m "<b>#message</b>"</li>
+	<li>git log --graph</li>
+	<li>git diff <b>HEAD</b> : <i>delta between HEAD and current unCommited stages</i></li>
+	<li>git diff <b>HEAD~10</b> : <i>delta between current state of branch (unCommited) and 
+			HEAD 10 steps backward</i></li> 
+	<li>git diff <b>HEAD~10</b> <b>HEAD</b> : <i>delta between current HEAD and HEAD 10 steps backward</i></li>
+	<li>git diff <b>#SHA1_for_commit01</b> <b>#SHA1_for_commit10</b> : <i>delta between stage on commit with SHA1_01 
+		and stage on commit with SHA1_10</i> 
+	<li>git reset --hard <b>HEAD~3</b> : <i>UNDO (erase) 3 LAST commit's</i></li>
+	<li>git reset --hard <b>HEAD~</b> : <i>UNDO (erase) 1 LAST commit</i></li>
+	<li>git reset --soft <b>HEAD~3</b> : <i>go back on 3 steps and make 3 last stages uncommited</i></li>
+	<li></li>
+
+</ol>
+<h3>github.com</h3>
+<ol>
+	<li>Create organization</li>
+	<li>Create new team in org </li>
+	<li>Add new members in team</li>
+	<li>ORIGIN -- cname of cuurent branch on GITHUB-side (i.e. ORIGIN\HEAD -- point to last commit 
+		on github.com)</li>
+	<li>to recive copy of remote repo use <b>git clone</b> -- this make local copy of remote repo on your PC</li>
+	<li>instead <b>origin/head</b> (on remote repo) on local side working <b>master/head</b> -- local pointer on local  commites</li>
+	<li>when all eddition in local repo was made , then do <b>git push</b> to send all changes in remote repo</li>
+	<li>when make edit in local copy of repo, then all changes are made in <b>WORKING COPY</b> (not in 
+		<b>LOCAL COPY REPO</b>), and you can do <b>git fetch</b> to update your <b>local copy repo</b> 
+		from remote repo (github) or <b>git pull</b> to update <b>local copy repo</b> and MERGE remote commites 
+		with <b>working copy</b>
+	</li>
+</ol>
+</body>
+</html>
